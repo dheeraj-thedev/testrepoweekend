@@ -19,6 +19,10 @@ Twitter Prfile  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon</title>
     <style>
+        h1
+        {
+            text-align: center;
+        }
         body
         {
             font-family: Arial, Helvetica, sans-serif;
@@ -37,71 +41,109 @@ Twitter Prfile  -->
             display: block;
             align-items: center;
         }
+        fieldset
+        {
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        tr
+        {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
     </style>
 </head>
 <body>
-        <form action="#" method="POST" target="_blank">
+        <form action="#" method="POST" target="_blank" style="width: 500px;margin-left: auto;margin-right: auto;">
             <h1>Hackathon Registration Form</h1>
-            <table>
-                <th>Personal Profile</th>
-                <tr>
-                    <td><label for="name">Name</label></td>
-                    <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
-                </tr>
-                <tr>
-                    <td><label for="sex">Sex</label></td>
-                    <td>
-                        <input type="radio" name="sex" id="male" value="male">
-                        <label for="male">Male</label>
-                        <input type="radio" name="sex" id="female" value="female">
-                        <label for="female">Female</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="dob">dob</label></td>
-                    <td><input type="date" name="dob" id="dob"></td>
-                </tr>
-                <tr>
-                    <td><label for="name">Email</label></td>
-                    <td><input type="email" name="email" id="email" placeholder="Email"></td>
-                </tr>
-                <tr>
-                    <td><label for="name">Contact</label></td>
-                    <td><input type="tel" name="contact" id="contact" placeholder="Contact no"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="level">Contest Level</label>
-                    </td>
-                    <td>
-                        <select name="level" id="lvl" form="hackathon">
-                            <option value="Novice">Novice</option>
-                            <option value="Int">Intermediate</option>
-                            <option value="expert">Expert</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="github">Github Profile</label></td>
-                    <td><input type="url" name="github" id="github" placeholder="Github Profile"></td>
-                </tr>
-                <tr>
-                    <td><label for="github">Linkedin Profile</label></td>
-                    <td><input type="url" name="linkedin" id="linkedin" placeholder="Linkedin Profile"></td>
-                </tr>
-                <tr>
-                    <td><label for="twitter">Twitter Profile</label></td>
-                    <td><input type="url" name="twitter" id="twitter" placeholder="Twitter Profile"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit">
-                    </td>
-                    <td>
-                        <input type="reset">
-                    </td>
-                </tr>
-            </table>
+            
+                <fieldset>
+                    <legend>Personal Profile</legend>
+                    <table>
+                        <tr>
+                            <td><label for="name">Name</label></td>
+                            <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="sex">Sex</label></td>
+                            <td>
+                                <input type="radio" name="sex" id="male" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" name="sex" id="female" value="female">
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="dob">dob</label></td>
+                            <td><input type="date" name="dob" id="dob"></td>
+                        </tr>
+                    </table>  
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <table>
+                        <tr>
+                            <td><label for="name">Contact</label></td>
+                            <td><input type="tel" name="contact" id="contact" placeholder="Contact no"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="name">Email</label></td>
+                            <td><input type="email" name="email" id="email" placeholder="Email"></td>
+                        </tr>   
+                    </table>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Portfolio links</legend>
+                    <table>
+                        <tr>
+                            <td><label for="github">Github Profile</label></td>
+                            <td><input type="url" name="github" id="github" placeholder="Github Profile"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="github">Linkedin Profile</label></td>
+                            <td><input type="url" name="linkedin" id="linkedin" placeholder="Linkedin Profile"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="twitter">Twitter Profile</label></td>
+                            <td><input type="url" name="twitter" id="twitter" placeholder="Twitter Profile"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Competition Level</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="level">Contest Level</label>
+                            </td>
+                            <td>
+                                <select name="level" id="lvl" form="hackathon">
+                                    <option value="Novice">Novice</option>
+                                    <option value="Int">Intermediate</option>
+                                    <option value="expert">Expert</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset style="border:0 !important;">
+                    <table style="margin-left: auto;margin-right: auto;">
+                        <tr>
+                            <td>
+                                <input type="submit">
+                            </td>
+                            <td>
+                                <input type="reset">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
         </form>
 </body>
 </html>
